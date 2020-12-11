@@ -50,7 +50,7 @@ p {
 
 /*adjusted the height propery to 950px so full image is shown, like in the mock. Also referred to this by class. which is now in a section tag*/
 .hero {
-    height: 950px;
+    height: 1000px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -187,13 +187,15 @@ p {
     font-size: 36px;
 }
 
-.footer {
+/*Deleted the footer class and referencing footer by calling it by the footer element*/
+
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
