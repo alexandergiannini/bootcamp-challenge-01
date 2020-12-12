@@ -18,25 +18,34 @@ header {
 
 header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 48px;    
+}
+
+/*added this header a declaration so that the logo doesnt appear as a link*/
+header a {
+    text-decoration: none;
     color: #ffffff
 }
+
 /* Deleted the div tag after h1 tag (on HTML file) and replaced it with nav tag, now being reference below */
+/*also adjusted the font size to 26px*/
+/*adjusted the margin right elemet to be 35px*/
 header nav {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 35px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 header nav ul {
     list-style-type: none;
 }
 
+/*adjusted the margin left propery to be 50px*/ 
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 header nav ul li a {
@@ -44,13 +53,9 @@ header nav ul li a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
-/*adjusted the height propery to 950px so full image is shown, like in the mock. Also referred to this by class. which is now in a section tag*/
+/*adjusted the height propery to 1060px so full image is shown, like in the mock. Also referred to this by class. which is now in a section tag*/
 .hero {
-    height: 1000px;
+    height: 1060px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -74,9 +79,18 @@ p {
     margin-left: 20px;
 }
 
+/*added this so i can reference the p by its class*/
+.content p {
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+
+/*Changed the padding propery to be 40px*/
 .benefits {
     margin-right: 20px;
-    padding: 20px;
+    padding: 40px;
     clear: both;
     float: right;
     width: 20%;
@@ -85,18 +99,21 @@ p {
     background-color: #2589bd;
 }
 
+/*updated the margin-bottom propery to equal 52px*/
 .benefit-lead {
-    margin-bottom: 32px;
+    margin-bottom: 52px;
     color: #ffffff;
 }
 
+/*updated the margin-bottom propery to equal 52px*/
 .benefit-brand {
-    margin-bottom: 32px;
+    margin-bottom: 52px;
     color: #ffffff;
 }
 
+/*updated the margin-bottom propery to equal 52px*/
 .benefit-cost {
-    margin-bottom: 32px;
+    margin-bottom: 52px;
     color: #ffffff;
 }
 
@@ -113,6 +130,11 @@ p {
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
+}
+
+/*added this element so i can reference the p tag by the benefits class*/
+.benefits p {
+    font-size: 20px
 }
 
 .benefit-lead img {
@@ -133,43 +155,49 @@ p {
     max-width: 150px;
 }
 
+/*changed the height to be 350px*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 350px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
+/*changed the height to be 350px*/
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 350px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
+/*changed the height to be 350px*/
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 350px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
+/*changed the max height to be 240px*/
 .search-engine-optimization img {
-    max-height: 200px;
+    max-height: 240px;
 }
 
+/*changed the max height to be 240px*/
 .online-reputation-management img {
-    max-height: 200px;
+    max-height: 240px;
 }
 
+/*changed the max height to be 240px*/
 .social-media-marketing img {
-    max-height: 200px;
+    max-height: 240px;
 }
 
 .search-engine-optimization h2 {
@@ -187,15 +215,8 @@ p {
     font-size: 36px;
 }
 
-/*Deleted the footer class and referencing footer by calling it by the footer element*/
-
+/*calling footer by its tag, instead of it's class*/
 footer {
-    padding: 30px;
+    padding: 20px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 20px;
 }
