@@ -8,7 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
-/* Referred to the header by its tag, as opposed to it's class (deleted the div tag with header class from HTML file */
+/* Referred to the header by its tag, as opposed to it's class (deleted the div tag with header class from HTML file) */
 header { 
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,12 +16,13 @@ header {
     color: #ffffff;
 }
 
+/*referencing this by the header tag instead of the class*/
 header h1 {
     display: inline-block;
     font-size: 48px;    
 }
 
-/*added this header a declaration so that the logo doesnt appear as a link*/
+/*added this header a declaration so that the logo doesnt appear as a link, but still functions as one*/
 header a {
     text-decoration: none;
     color: #ffffff
@@ -29,7 +30,7 @@ header a {
 
 /* Deleted the div tag after h1 tag (on HTML file) and replaced it with nav tag, now being reference below */
 /*also adjusted the font size to 26px*/
-/*adjusted the margin right elemet to be 35px*/
+/*adjusted the margin right element to be 35px*/
 header nav {
     padding-top: 15px;
     margin-right: 35px;
@@ -38,16 +39,19 @@ header nav {
     font-size: 26px;
 }
 
+/*Referencing this by the header/nav tags instead of the class*/
 header nav ul {
     list-style-type: none;
 }
 
+/*Referencing this by the header/nav tags instead of the class*/
 /*adjusted the margin left propery to be 50px*/ 
 header nav ul li {
     display: inline-block;
     margin-left: 50px;
 }
 
+/*referencing the header/nav tags instead of the class*/
 header nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -63,16 +67,8 @@ header nav ul li a {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/*referencing this by class within section tag*/
+/*also adjusted this and the rest of the selectors so that it can be in order (with HTML file)*/
 .content {
     width: 75%;
     display: inline-block;
@@ -80,82 +76,23 @@ header nav ul li a {
 }
 
 /*added this so i can reference the p by its class*/
-.content p {
+/*created this class for the p tag within content section so i can distinguish between the exact divs*/
+.padding-right {
     font-size: 20px;
-    padding: 20px;
+    padding-top: 15px;
+    padding-right: 150px;
     
 }
 
-
-/*Changed the padding propery to be 40px*/
-.benefits {
-    margin-right: 20px;
-    padding: 40px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-/*updated the margin-bottom propery to equal 52px*/
-.benefit-lead {
-    margin-bottom: 52px;
-    color: #ffffff;
-}
-
-/*updated the margin-bottom propery to equal 52px*/
-.benefit-brand {
-    margin-bottom: 52px;
-    color: #ffffff;
-}
-
-/*updated the margin-bottom propery to equal 52px*/
-.benefit-cost {
-    margin-bottom: 52px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*added this element so i can reference the p tag by the benefits class*/
-.benefits p {
-    font-size: 20px
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+/*created this class for the p tag within content section so i can distinguish between the exact divs*/
+.padding-left {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 30px;
 }
 
 /*changed the height to be 350px*/
+/*adjusted the .search-engine-optimization class to be below the content class (so in order)*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -165,6 +102,21 @@ header nav ul li a {
     color: #ffffff;
 }
 
+/*changed the max height to be 240px*/
+/*added the float/margin-right here so we dont have to reference by the float left class on html file*/
+.search-engine-optimization img {
+    max-height: 240px;
+    float: left;
+    margin-right: 25px;
+}
+
+/*adjusted the font-size to match the mock*/
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
 /*changed the height to be 350px*/
 .online-reputation-management {
     margin-bottom: 20px;
@@ -173,6 +125,20 @@ header nav ul li a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+}
+
+/*changed the max height to be 240px*/
+/*added the float/margin-right here so we dont have to reference by the float right class on html file*/
+.online-reputation-management img {
+    max-height: 240px;
+    float: right;
+    margin-left: 25px
+}
+
+/*adjusted the font-size to match the mock*/
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 /*changed the height to be 350px*/
@@ -186,33 +152,88 @@ header nav ul li a {
 }
 
 /*changed the max height to be 240px*/
-.search-engine-optimization img {
-    max-height: 240px;
-}
-
-/*changed the max height to be 240px*/
-.online-reputation-management img {
-    max-height: 240px;
-}
-
-/*changed the max height to be 240px*/
+/*added the float/margin-right here so we dont have to reference by the float left class on html file*/
 .social-media-marketing img {
     max-height: 240px;
+    float: left;
+    margin-right: 25px;
 }
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*adjusted the font-size to match the mock*/
 .social-media-marketing h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 40px;
+}
+
+/*Changed the padding propery to be 40px*/
+.benefits {
+    margin-right: 20px;
+    padding: 40px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*added this element so i can reference the p tag by the benefits class*/
+.benefits p {
+    font-size: 20px
+}
+
+/*updated the margin-bottom propery to equal 52px*/
+/*displaying all the .benefit-lead selectors together, in order*/
+.benefit-lead {
+    margin-bottom: 52px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*updated the margin-bottom propery to equal 52px*/
+/*displaying all the .benefit-brand selectors together, in order*/
+.benefit-brand {
+    margin-bottom: 52px;
+    color: #ffffff;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*updated the margin-bottom propery to equal 52px*/
+/*displaying all the .benefit-cost selectors together, in order*/
+.benefit-cost {
+    margin-bottom: 52px;
+    color: #ffffff;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 /*calling footer by its tag, instead of it's class*/
