@@ -31,12 +31,12 @@ header a {
 /* Deleted the div tag after h1 tag (on HTML file) and replaced it with nav tag, now being reference below */
 /*also adjusted the font size to 26px*/
 /*adjusted the margin right element to be 35px*/
+/*consolidated font size and font family within font propery*/
 header nav {
     padding-top: 15px;
     margin-right: 35px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 26px;
+    font: 26px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Referencing this by the header/nav tags instead of the class*/
@@ -77,18 +77,17 @@ header nav ul li a {
 
 /*added this so i can reference the p by its class*/
 /*created this class for the p tag within content section so i can distinguish between the exact divs*/
+/*consolidated the padding here*/
 .padding-right {
     font-size: 20px;
-    padding-top: 15px;
-    padding-right: 150px;
-    
+    padding: 15px 150px 0 0;
 }
 
 /*created this class for the p tag within content section so i can distinguish between the exact divs*/
+/*consolidated the padding here*/
 .padding-left {
     font-size: 20px;
-    padding-top: 15px;
-    padding-right: 30px;
+    padding: 15px 30px 0 0;
 }
 
 /*changed the height to be 350px*/
@@ -115,7 +114,6 @@ header nav ul li a {
     margin-bottom: 20px;
     font-size: 40px;
 }
-
 
 /*changed the height to be 350px*/
 .online-reputation-management {
