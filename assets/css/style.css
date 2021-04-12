@@ -16,13 +16,13 @@ header {
     color: #ffffff;
 }
 
-/*referencing this by the header tag instead of the class*/
+ /*rddasdasdeferencing this by the header tag instead of the class*/
 header h1 {
     display: inline-block;
     font-size: 48px;    
 }
 
-/*added this header a declaration so that the logo doesnt appear as a link, but still functions as one*/
+/*added dasdas this header a declaration so that the logo doesnt appear as a link, but still functions as one*/
 header a {
     text-decoration: none;
     color: #ffffff
